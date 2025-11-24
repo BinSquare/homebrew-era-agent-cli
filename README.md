@@ -1,4 +1,4 @@
-# homebrew-era-agent
+# era-agent-cli
 
 Homebrew tap for ERA Agent (secure code-execution runner with microVM orchestration).
 

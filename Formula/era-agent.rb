@@ -11,8 +11,9 @@ class EraAgent < Formula
   depends_on "buildah" => :recommended # Can work without but limited functionality
 
   def install
-    system "make", "agent"
-    bin.install "agent"
+    # Build from the Go source living under the era-agent subdir
+    system "make", "-C", "era-agent", "agent"
+    bin.install "era-agent/agent"
   end
 
   def post_install

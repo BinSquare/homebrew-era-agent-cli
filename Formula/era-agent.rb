@@ -2,6 +2,7 @@ class EraAgent < Formula
   desc "Secure code-execution runner with microVM orchestration using krunvm"
   homepage "https://github.com/BinSquare/ERA"
   url "https://github.com/BinSquare/ERA/releases/download/v0.0.1/era-agent-v0.0.1.tar.gz"
+  version "0.0.1"
   sha256 "e391be40a366bbad3157276f506eeaea1a1480341e836f2a4f9590e8777bcc1f"
   license "MIT"
 

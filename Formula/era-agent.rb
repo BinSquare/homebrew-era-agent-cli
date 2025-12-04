@@ -7,7 +7,7 @@ class EraAgent < Formula
   license "MIT"
 
   depends_on "go" => :build
-  depends_on "krunvm" => :recommended # Can work without but limited functionality
+  depends_on "krunvm@0.2.4" => :recommended # Pinned to libkrun 1.15.1 for better macOS 16.2 compatibility
   depends_on "buildah" => :recommended # Can work without but limited functionality
 
   def install

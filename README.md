@@ -5,7 +5,7 @@ Homebrew tap for ERA Agent (secure code-execution runner with microVM orchestrat
 ## Install
 
 ```bash
-brew tap binsquare/era-agent https://github.com/BinSquare/era-agent-cli
+brew tap binsquare/era-agent https://github.com/BinSquare/homebrew-era-agent-cli
 brew install krunvm buildah  # dependencies
 brew install binsquare/era-agent-cli/era-agent
 ```

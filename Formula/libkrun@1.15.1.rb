@@ -7,12 +7,15 @@ class LibkrunAT1151 < Formula
   license "Apache-2.0"
 
   depends_on "rust" => :build
+  depends_on "llvm" => :build
   # Upstream only supports Hypervisor.framework on arm64
   depends_on arch: :arm64
   depends_on "dtc"
   depends_on "libkrunfw"
 
   def install
+    # krun_display build script uses libclang; point it at Homebrew's copy
+    ENV["LIBCLANG_PATH"] = Formula["llvm"].opt_lib
     system "make", "BLK=1", "NET=1"
     system "make", "PREFIX=#{prefix}", "install"
   end
